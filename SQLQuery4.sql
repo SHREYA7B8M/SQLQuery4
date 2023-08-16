@@ -49,10 +49,10 @@ select * from Products
 as
     select @totalTax = SUM(PTax)
     from Products
-    where PCompany = @companyName;
+    where PCompany = @companyName
 
 	declare @totalTax float
-	execute usp_TaxofPCompany 'SamSung', @totalTax output;
+	execute usp_TaxofPCompany 'SamSung', @totalTax output
 	print @totalTax  
 
 	 exec sp_helptext usp_TaxofPCompany
