@@ -11,7 +11,7 @@ PPrice float,
 PTax as PPrice*0.10 persisted,
 PCompany nvarchar(50),
 PQty int check(PQty>=1) default 10
-)
+) 
 
 insert into Products (PName,PPrice,PCompany,PQty) values('Smartphone',45000.99,'SamSung',15)
 insert into Products (PName,PPrice,PCompany) values('Tablet',89000.99,'Apple')
