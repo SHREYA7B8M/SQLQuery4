@@ -38,7 +38,7 @@ select * from Products
 
  exec usp_ProductDisplay
 
- 	exec sp_helptext usp_ProductDisplay
+ exec sp_helptext usp_ProductDisplay
 
  --Q2
 
@@ -55,7 +55,7 @@ as
 	execute usp_TaxofPCompany 'SamSung', @totalTax output;
 	print @totalTax  
 
-	 	exec sp_helptext usp_TaxofPCompany
+	 exec sp_helptext usp_TaxofPCompany
 
 
 
